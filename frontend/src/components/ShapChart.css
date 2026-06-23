@@ -1,0 +1,27 @@
+.shap-chart { width: 100%; }
+
+.shap-tooltip {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 10px 14px;
+  box-shadow: var(--shadow-md);
+}
+
+.shap-tooltip-name {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.shap-tooltip-val {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.shap-tooltip-dir {
+  font-size: 11px;
+  margin-top: 2px;
+  color: var(--text-muted);
+}

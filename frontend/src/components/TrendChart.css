@@ -1,0 +1,19 @@
+.trend-tooltip {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 10px 14px;
+  box-shadow: var(--shadow-md);
+}
+
+.trend-tooltip-label {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.trend-tooltip-val {
+  font-size: 12px;
+  color: var(--primary);
+}

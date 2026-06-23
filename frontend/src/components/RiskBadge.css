@@ -1,0 +1,32 @@
+.risk-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: var(--radius-badge);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.risk-badge--sm {
+  font-size: 11px;
+  padding: 2px 8px;
+}
+
+.badge--high {
+  color: var(--high-risk);
+  background: var(--high-risk-bg);
+  border: 1px solid #FECACA;
+}
+
+.badge--medium {
+  color: #92400E;
+  background: var(--medium-risk-bg);
+  border: 1px solid #FDE68A;
+}
+
+.badge--low {
+  color: #15803D;
+  background: var(--low-risk-bg);
+  border: 1px solid #BBF7D0;
+}

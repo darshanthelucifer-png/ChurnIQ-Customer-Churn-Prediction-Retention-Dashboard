@@ -1,0 +1,380 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# ChurnIQ — Comprehensive .gitignore
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Python / Backend
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.c
+*.cpp
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+.env.local
+env.bak/
+venv.bak/
+pip-selfcheck.json
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Scrapy
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# ML Models, Data & Artifacts (IMPORTANT!)
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Trained models
+backend/model.pkl
+backend/*.pkl
+backend/*.joblib
+backend/*.h5
+backend/*.pt
+backend/*.pth
+backend/*.onnx
+
+# Model metadata
+backend/model_meta.json
+backend/shap_global.json
+backend/metrics.json
+backend/feature_names.json
+
+# Datasets
+backend/telco_churn.csv
+backend/*.csv
+backend/*.tsv
+backend/*.json
+backend/*.xlsx
+backend/*.parquet
+backend/data/
+backend/datasets/
+*.csv
+*.tsv
+*.dat
+
+# Database files
+backend/churniq.db
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+backend/*.db-shm
+backend/*.db-wal
+
+# Logs
+backend/logs/
+backend/*.log
+*.log
+logs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Alembic (if you add database migrations later)
+backend/alembic/versions/*.py
+!backend/alembic/versions/__init__.py
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Node / Frontend
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Build outputs
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.next/
+frontend/out/
+
+# Production
+/build
+
+# Testing
+/coverage
+
+# Cache
+.npm
+.eslintcache
+.stylelintcache
+.cache/
+.parcel-cache/
+
+# Misc
+.DS_Store
+*.pem
+*.swp
+*.swo
+*~
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# Turbopack
+.turbo
+
+# ──────────────────────────────────────────────────────────────────────────────
+# IDEs & Editors
+# ──────────────────────────────────────────────────────────────────────────────
+
+# VSCode
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# JetBrains IDEs (PyCharm, WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+.netrwhist
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Operating System Files
+# ──────────────────────────────────────────────────────────────────────────────
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Docker (if you add it later)
+# ──────────────────────────────────────────────────────────────────────────────
+
+docker-compose.override.yml
+.dockerignore
+
+# ──────────────────────────────────────────────────────────────────────────────
+# CI/CD
+# ──────────────────────────────────────────────────────────────────────────────
+
+.github/workflows/*.yml
+!.github/workflows/test.yml
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Temporary Files
+# ──────────────────────────────────────────────────────────────────────────────
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.rej
+*.~lock.*
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Secrets & Credentials (NEVER COMMIT THESE!)
+# ──────────────────────────────────────────────────────────────────────────────
+
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+config/secrets.json
+*.secret
+
+# API Keys
+*_API_KEY*
+*_SECRET*
+*_TOKEN*
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Misc Project-Specific
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Screenshots (keep folder, ignore large images if needed)
+# docs/screenshots/*.png
+# !docs/screenshots/placeholder.png
+
+# Notes and drafts
+TODO.md
+NOTES.md
+scratch/
+drafts/
+
+# Large files (use Git LFS if needed)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Keep These Files (Explicitly NOT Ignored)
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Keep empty directories
+!.gitkeep
+
+# Keep example env files
+!.env.example
+!.env.template
+
+# Keep documentation
+!README.md
+!CHANGELOG.md
+!CONTRIBUTING.md
+!LICENSE
+!docs/
+
+# Keep requirements
+!requirements.txt
+!package.json
+!package-lock.json

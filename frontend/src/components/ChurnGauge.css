@@ -1,0 +1,26 @@
+.churn-gauge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.churn-gauge-svg {
+  overflow: visible;
+}
+
+.gauge-pct-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.gauge-label-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.gauge-minmax {
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+}
